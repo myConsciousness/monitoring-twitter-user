@@ -10,7 +10,7 @@ class MonitoringJob implements ScheduledJobBuilder {
   @override
   ScheduledJob build() => ScheduledJob(
         name: 'Monitoring Job',
-        schedule: CronParser('*/5 * * * * * '),
+        schedule: CronParser('*/3 * * * * * '),
         steps: [
           Step(
             name: 'Monitor User Step',
